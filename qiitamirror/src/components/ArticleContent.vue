@@ -12,7 +12,7 @@
 
 <script>
 export default {
-  name: "Article",
+  name: "ArticleContent",
   props: {
     author: String,
     title: String,

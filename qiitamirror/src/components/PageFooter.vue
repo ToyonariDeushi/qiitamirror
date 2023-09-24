@@ -28,7 +28,7 @@
 
 <script>
 export default {
-  name: "SiteFooter",
+  name: "PageFooter",
 };
 </script>
 
