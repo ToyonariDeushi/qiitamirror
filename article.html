@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="”robots”" content="”nofollow”" />
+    <title>記事ページ｜Qiitaコピーサイト</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="siteHeader">
+        <div class="siteLogo">
+          <a href="/"><h1>Qiita</h1></a>
+        </div>
+        <nav class="headerNav">
+          <ul>
+            <li><a href="/login.html">ログイン</a></li>
+            <li><a href="/signup.html">新規登録</a></li>
+          </ul>
+        </nav>
+      </header>
+      <nav class="bodyNav">
+        <ul>
+          <li><a href="./">トレンド</a></li>
+          <li><a href="./">質問</a></li>
+          <li><a href="./">公式イベント</a></li>
+          <li><a href="./">公式コラム</a></li>
+          <li><a href="./">募集</a></li>
+          <li><a href="./">Organization</a></li>
+        </ul>
+      </nav>
+      <main class="mainContent">
+        <section class="articleContent">
+          <p class="userName">名前</p>
+          <h2 class="articleName">
+            ちょっとした気配りで皆を幸せにする GitHub の使い方
+          </h2>
+          <p class="createDate">投稿日 2023年09月18日</p>
+          <section class="textContent">
+            <h3 class="contentTitle">TL;DR</h3>
+            <p>
+              読むのが面倒な人は
+              <a href="./">PR がレビューされない環境を作らない</a>
+              を読んでください。<br />
+              その他のものは、周りの開発者体験をより良くするための手法について提示しています。
+            </p>
+          </section>
+          <section class="textContent">
+            <h3 class="contentTitle">はじめに</h3>
+            <p>
+              この記事は GitHub
+              での開発者体験をより良いものとするため、チームメイトにこの記事を見せて
+              GitHub 上での開発手法を合わせたいという意図があります。<br />
+              より良い開発体験を見つけたり躓いた部分があった場合は適宜更新されます。
+            </p>
+            <p>
+              また記事を見ている方の意見も募集しております<br />
+              皆でより良い開発者体験を得られる環境を考えられたらと思います。
+            </p>
+          </section>
+          <section class="textContent">
+            <h3 class="contentTitle">
+              私が一番訴えたい事： PR がレビューされない環境を作らない
+            </h3>
+            <p>
+              Git を使った開発をした事なら誰にでもある、<b
+                >PR が全然レビューされない問題</b
+              >
+              は開発者体験を下げる大きな要因です。<br />
+              そこが <b>タスクを止めている明確とした要因</b>
+              にも関わらず、誰もレビューしない環境がいつの間にか出来上がります。
+            </p>
+            <p>
+              レビューが中々されないとして考えられるのは、開発者はみんな目の前にある自分のタスクを早く消化したいからです。<br />
+              他人のタスクで自分のタスクが長引くのは嫌でしょう。気持ちは分かります。<br />
+              しかし、コミュニケーションでこの旨を伝えず、暗黙の了解として PR
+              レビュー依頼が来ているにも関わらず後回しにするのはおかしいと思います。<br />
+              渡されたバトンに対してはしっかりとリアクションを取るべきです。<br />
+              （レビューが遅くなるのであれば、遅れる旨を伝えるだけでも大分違うと思います）
+            </p>
+            <p>
+              この問題を解消するために、各プロダクトで意識して取り組んでいるところもあるでしょう。<br />
+              これから示す項目を実施するのも1つの解決策になります。
+            </p>
+            <p>
+              例として、コンテキストが高いもの（要件が複雑なもの）は、ペアプロ・モブプロをするという手もあります。
+            </p>
+            <p>これは、</p>
+            <ul class="listItem">
+              <li>reviewer が複雑な要件を理解するのに時間がかかる</li>
+              <li>チャットベースだと要件の理解にすれ違いが起こりやすい</li>
+              <li>
+                チャットベースだとやり取りが何回も行われるため時間がかかる
+              </li>
+              <li>レビューの敷居が高くモチベーションの低下が起こる</li>
+            </ul>
+            <p>といった、様々な問題を解決する手法のひとつでもあります。</p>
+            <p>
+              話を戻すと、レビューが中々されない事による開発体験の低下は経験したことがある人が多いものの、<b
+                >ほとんどのプロダクトではこれらの議論は行われず、ストレスを感じる場面が発生する</b
+              >
+              のではないかと思います。
+            </p>
+            <p>
+              そしてタスクが回らなくなり、その理由を探します。<br />
+              <b>「タスクがスムーズに進まない理由が目の前にあるのに」</b>
+            </p>
+            <p>
+              これらから、私はレビュをする側・される側の意識を共有する場があっても良いと考えています。<br />
+              この記事がきっかけで、チームメイトと改めて議論し、認識を共有し、環境を用意してより良い開発体験を得られたら幸いです。
+            </p>
+          </section>
+        </section>
+      </main>
+      <footer class="siteFooter">
+        <div class="footerLogo">
+          <a href="./"><h1>Qiita</h1></a>
+        </div>
+        <div class="footerNav">
+          <ul>
+            <li><a href="./">ヘルプ</a></li>
+            <li><a href="./">利用規約</a></li>
+            <li><a href="./">プライバシー</a></li>
+            <li><a href="./">お問い合わせ</a></li>
+            <li><a href="./">Qiitaとは</a></li>
+            <li><a href="./">Qiita API</a></li>
+            <li><a href="./">Qiita Jobs</a></li>
+            <li><a href="./">Qiita Zine</a></li>
+          </ul>
+        </div>
+        <div class="footerSns">
+          <ul>
+            <li><a href="./">Twitter</a></li>
+            <li><a href="./">Facebook</a></li>
+            <li><a href="./">Instagram</a></li>
+          </ul>
+        </div>
+        <p class="copyRight">© 2023 Qiita</p>
+      </footer>
+    </div>
+  </body>
+</html>
