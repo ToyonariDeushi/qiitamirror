@@ -8,6 +8,7 @@ import Header from "./components/Header.vue";
 import Navigation from "./components/Navigation.vue";
 import Article from "./components/Article.vue";
 import SiteFooter from "./components/SiteFooter.vue";
+import SiteFooter from "./components/SiteFooter.vue";
 
 export default {
   name: "App",
