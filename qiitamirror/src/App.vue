@@ -1,20 +1,3 @@
-<template>
-  <div class="wrapper">
-    <PageHeader />
-    <NavigationMenu />
-    <main class="mainContent">
-      <ArticleContent
-        :author="author"
-        :title="title"
-        :date="date"
-        :summary="summary"
-        :content="content"
-      />
-    </main>
-    <PageFooter />
-  </div>
-</template>
-
 <script>
 import PageHeader from "./components/PageHeader.vue";
 import NavigationMenu from "./components/NavigationMenu.vue";
@@ -40,6 +23,25 @@ export default {
   },
 };
 </script>
+
+<template>
+  <div id="app">
+    <div class="wrapper">
+      <PageHeader />
+      <NavigationMenu />
+      <main class="mainContent">
+        <ArticleContent
+          :author="author"
+          :title="title"
+          :date="date"
+          :summary="summary"
+          :content="content"
+        />
+      </main>
+      <PageFooter />
+    </div>
+  </div>
+</template>
 
 <style>
 /* Add your styles here */
