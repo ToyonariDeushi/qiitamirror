@@ -25,24 +25,25 @@ export default {
 </script>
 
 <template>
-  <div id="app">
-    <div class="wrapper">
-      <PageHeader />
-      <NavigationMenu />
-      <main class="mainContent">
-        <ArticleContent
-          :author="author"
-          :title="title"
-          :date="date"
-          :summary="summary"
-          :content="content"
-        />
-      </main>
-      <PageFooter />
-    </div>
+  <div class="wrapper">
+    <PageHeader />
+    <NavigationMenu />
+    <main class="mainContent">
+      <ArticleContent
+        :author="author"
+        :title="title"
+        :date="date"
+        :summary="summary"
+        :content="content"
+      />
+    </main>
+    <PageFooter />
   </div>
 </template>
 
 <style>
-/* Add your styles here */
+#app {
+  margin: 0;
+  padding: 0;
+}
 </style>
